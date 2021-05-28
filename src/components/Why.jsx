@@ -60,7 +60,7 @@ const Card = (props) => {
         <>
             <div className="col-lg-3 col-md-4 col-sm-6 px-4">
                 <div className="card mt-4">
-                    <img src={props.imgsrc} alt="" />
+                    <img src={props.imgsrc} className="img-fluid" alt="" />
                     <h4><span>{props.capital}</span>{props.small}</h4>
                 </div>
             </div>

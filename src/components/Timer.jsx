@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Timer.scss";
 
 class CountDown extends Component {
   constructor(props) {
@@ -42,7 +41,7 @@ class CountDown extends Component {
     }
   }
   componentDidMount() {
-    this.deadline = new Date("May 09, 2021 12:30:00").getTime();
+    this.deadline = new Date("Jun 06, 2021 11:30:00").getTime();
 
     this.x = setInterval(this.count, 1000);
   }
@@ -50,32 +49,34 @@ class CountDown extends Component {
   render() {
     const { days, seconds, hours, minutes } = this.state;
     return (
-      <div id="countdown">
-        <div className="col-4">
-          <div className="box">
-            <p id="day">{days}</p>
-            <span className="text">Days</span>
-          </div>
+        <div className="container-fluid" id="countdown">
+        <div className="row">
+            <div className="col-3">
+                <div className="box">
+                    <p id="day">{days}</p>
+                    <span className="text">Days</span>
+                </div>
+            </div>
+            <div className="col-3">
+                <div className="box">
+                    <p id="hour">{hours}</p>
+                    <span className="text">Hours</span>
+                </div>
+            </div>
+            <div className="col-3">
+                <div className="box">
+                    <p id="minute">{minutes}</p>
+                    <span className="text">Minutes</span>
+                </div>
+            </div>
+            <div className="col-3">
+                <div className="box">
+                    <p id="second">{seconds}</p>
+                    <span className="text">Seconds</span>
+                </div>
+            </div>
         </div>
-        <div className="col-4">
-          <div className="box">
-            <p id="hour">{hours}</p>
-            <span className="text">Hours</span>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="box">
-            <p id="minute">{minutes}</p>
-            <span className="text">Minutes</span>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="box">
-            <p id="second">{seconds}</p>
-            <span className="text">Seconds</span>
-          </div>
-        </div>
-      </div>
+    </div>
     );
   }
 }

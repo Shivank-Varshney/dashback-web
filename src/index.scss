@@ -50,12 +50,12 @@
   #navbar{
     .navbar-brand{
         .header-logo{
-            height: 25px;
+            height: 30px;
             margin: 20px 0;
         }
         p{
           font-size: 26px;
-          margin: 5px 0 0 35px;
+          margin: 14px 0 0 30px;
         }
     }
   }
@@ -65,9 +65,13 @@
 #home-header{
   .banner-1{
     background-color: #eb9481;
-    img{
-      min-height: 90vh;
-    }
+    display: flex;
+    justify-content: center;
+  }
+  .banner-2{
+    background-color: #A4F3BA;
+    display: flex;
+    justify-content: center;
   }
   .banner-text{
     display: flex;
@@ -208,7 +212,7 @@
 }
 
 
-#third-section{
+#webinar-section{
   background-color: #215481;
   h2{
     color: #fff;
@@ -218,22 +222,45 @@
     text-align: center;
     text-transform: capitalize;
   }
-  p{
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "roboto", "sans-serif";
-    margin-top: 15px;
-  }
   h3{
     text-align: center;
-    color: #fff;
+    color: #E7BB2F;
     font-size: 42px;
     font-family: "righteous", "sans-serif";
-    span{
-      color: #E7BB2F;
-      font-family: "righteous", "sans-serif";
+    margin-bottom: 50px;
+  }
+  #countdown {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 4px outset #fff;
+    padding: 15px 30px 30px;
+    .box {
+      &::after{
+        content: ":";
+        float: right;
+        margin-top: -70px;
+        margin-right: -20px;
+        font-weight: bolder;
+        font-size: 36px;
+      }
+      p {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .text {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        font-family: "roboto", "sans-serif";
+      }
+    }
+    .col-3:last-child {
+      .box {
+        &::after{
+          content: "";
+        }
+      }
     }
   }
   .registration-section{
@@ -245,30 +272,96 @@
       font-size: 46px;
       font-family: "righteous", "sans-serif";
     }
+    // .character{
+    //   margin-bottom: -94px;
+    //   z-index: -50;
+    // }
+    form{
+      z-index: 50;
+      color: red;
+      background-color: #215481;
+      padding: 50px 100px;
+      border-radius: 75px;
+      input{
+        border: none;
+        outline: none;
+      }
+      .btn-register{
+        background-color: #fff;
+        color: #215481;
+        display: inline-block;
+        padding: 2px 50px;
+        font-family: "montaga", sans-serif;
+        font-weight: bolder;
+      }
+    }
   }
-  .third-section-img{
+  .webinar-section-img{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
   }
 }
-// @media only screen and (max-width: 1120px) {
-//   #second-section{
-//     .second-section-text{
-//       padding: 30px;
-//       h2{
-//         font-size: 28px;
-//       }
-//       p{
-//         font-size: 18px;
-//       }
-//       .card{
-//         width: 70%;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 620px) {
+  #webinar-section{
+    h2{
+      font-size: 36px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    #countdown {
+      padding: 15px 5px 15px;
+      .box {
+        &::after{
+          margin-top: -60px;
+          margin-right: -20px;
+          font-size: 18px;
+        }
+        p {
+          font-size: 25px;
+        }
+        .text {
+          font-size: 8px;
+        }
+      }
+    }
+    .registration-section{
+      h4{
+        text-align: center;
+        padding: 0;
+        color: #fff;
+        font-size: 32px;
+        font-family: "righteous", "sans-serif";
+      }
+      form{
+        color: red;
+        background-color: #215481;
+        padding: 50px 30px;
+        border-radius: 75px;
+        input{
+          border: none;
+          outline: none;
+        }
+        .btn-register{
+          background-color: #fff;
+          color: #215481;
+          display: inline-block;
+          padding: 2px 50px;
+          font-family: "montaga", sans-serif;
+          font-weight: bolder;
+        }
+      }
+    }
+    .webinar-section-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+    }
+  }
+}
 
 
 #product-section{
@@ -278,6 +371,15 @@
     font-family: "montaga", sans-serif;
     font-weight: 600;
     font-size: 56px;
+  }
+  .associated-btn{
+    background-color: #215481;
+    color: #fff;
+    font-family: "montaga", sans-serif;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
   }
 }
 
@@ -294,11 +396,11 @@
     box-shadow: -0px -0px 20px -6px #000;
     padding: 20px 15px;
     border-radius: 10px;
-    img{
-      height: 200px;
-    }
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
     h4{
-      font-size: 15px;
+      font-size: 24px;
       text-align: center;
       padding: 20px 0 0 0;
       font-weight: 400;
@@ -321,41 +423,14 @@
   h2{
     font-weight: bolder;
     font-size: 48px;
+    font-family: "montaga", sans-serif;
+    margin-bottom: 20px;
   }
   p{
     font-weight: normal; 
     line-height: 1.5; 
-    font-size: 24px;}
-}
-
-#home-account{
-  h2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 48px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-  }
-  p{
-    text-align: center;
-    font-size: 16px;
-  }
-  .card{
-    box-shadow: -0px -0px 20px -6px #000;
-    padding: 20px 15px;
-    border-radius: 10px;
-    img{
-      height: 200px;
-    }
-    h4{
-      font-size: 15px;
-      text-align: center;
-      padding: 20px 0 0 0;
-      font-weight: 400;
-      span{
-        font-weight: 900;
-      }
-    }
+    font-size: 24px;
+    font-family: "roboto", sans-serif;
   }
   .btn-register{
     background-color: #3C5DA0;
@@ -365,6 +440,24 @@
     }
   }
 }
+@media only screen and (max-width: 620px) {
+  #reward{
+    h2{
+      font-size: 24px;
+    }
+    p{
+      font-size: 16px;
+    }
+    .btn-register{
+      background-color: #3C5DA0;
+      color: #fff;
+      &:hover{
+        background-color: #17449c;
+      }
+    }
+  }
+}
+
 
 .copyright{
   background-color: #215481;
