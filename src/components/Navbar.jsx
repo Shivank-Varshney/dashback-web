@@ -1,5 +1,5 @@
 import React from "react";
-import {NavHashLink} from "react-router-hash-link";
+import {NavLink} from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
 import Logo from "../assets/logo.png";
 
@@ -9,20 +9,21 @@ const Navbar = () => {
             <div className="container-fluid" id="navbar">
                 <div className="row">
                     <div className="col">
-                        <nav className="navbar navbar-expand-lg" data-aos="fade-down" data-aos-offset="0">
-                            <a className="navbar-brand" href="/#">
+                        <nav className="navbar navbar-expand-lg py-0">
+                            <div className="navbar-brand">
                                 <img src={Logo} alt="header logo" className="header-logo" />
-                            </a>
+                                <p>dashback</p>
+                            </div>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <MenuIcon />
                             </button>
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
                                     <Navmenu linkaddress="/#" linkname="home" />
-                                    <Navmenu linkaddress="/#" linkname="about" />
-                                    <Navmenu linkaddress="/#" linkname="services" />
-                                    <Navmenu linkaddress="/#" linkname="contact us" />
-                                    <Navmenu linkaddress="/#" linkname="login/register" />
+                                    <Navmenu linkaddress="/web" linkname="about" />
+                                    <Navmenu linkaddress="/web" linkname="services" />
+                                    <Navmenu linkaddress="/web" linkname="contact us" />
+                                    <Navmenu linkaddress="/webinar#" linkname="login/register" />
                                 </ul>
                             </div>
                         </nav>
@@ -37,7 +38,7 @@ const Navmenu = (props) => {
     return(
         <>
             <li className="nav-item active">
-                <NavHashLink smooth className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" to={props.linkaddress}>{props.linkname}</NavHashLink>
+                <NavLink exact activeClassName="active-nav" className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" to={props.linkaddress}>{props.linkname}</NavLink>
             </li>
         </>
     );
