@@ -1,17 +1,16 @@
 import React from "react";
-// import AssociateCarousel from "../components/AssociateCarousel";
 import Why from "../components/Why";
 import Banner from "../components/Banner";
 import Card from "../assets/card-illustration.svg"
 import RewareIllustration from "../assets/reward-illustration.svg";
-import UpperTick from "../assets/upper-tick.svg";
-import LowerTick from "../assets/lower-tick.svg";
+// import UpperTick from "../assets/upper-tick.svg";
+// import LowerTick from "../assets/lower-tick.svg";
 
 const Home = () => {
     return(
         <>
             {/* Bannet Section */}
-            <section className="container-fluid mb-5" id="home-header">
+            <section className="container-fluid mb-5 p-0" id="home-header">
                 <Banner />
             </section>
 
@@ -38,8 +37,8 @@ const Home = () => {
 
             {/* Product Section */}
             <section className="container-fluid mb-5 py-5" id="product-section">
-                <div className="row">
-                    {/* <div className="col-12">
+                {/* <div className="row">
+                    <div className="col-12">
                         <h3 className="py-5">At 19 Million + <br />stores, apps, websites & more</h3>
                     </div>
                     <div className="col-12 d-flex">
@@ -47,10 +46,10 @@ const Home = () => {
                     </div>
                     <div className="col-12">
                         <AssociateCarousel />
-                    </div> */}
-                </div>
+                    </div>
+                </div> */}
                 <section className="container-fluid my-5" id="home-why">
-                    <img src={UpperTick} className="img-fluid" alt="" />
+                    {/* <img src={UpperTick} className="img-fluid" alt="" /> */}
                     <div className="row">
                         <div className="col">
                             <h2>why us ?</h2>
@@ -64,7 +63,7 @@ const Home = () => {
                             {/* <div className="btn btn-know my-5">know more</div> */}
                         </div>
                     </div>
-                    <img src={LowerTick} className="img-fluid" alt="" />
+                    {/* <img src={LowerTick} className="img-fluid" alt="" /> */}
                 </section>
             </section>
 

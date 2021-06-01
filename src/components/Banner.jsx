@@ -47,9 +47,9 @@ const BannerSlide = (props) => {
                     </div>
                     <div className="col-md-6 banner-text">
                         <h1>{props.heading}</h1>
-                        <p>{props.content}</p>
-                        {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tenetur unde asperiores pariatur! Iste accusamus molestias repellat iusto, numquam officiis incidunt necessitatibus debitis nulla earum cupiditate asperiores.</p> */}
-                        <div className="get-app-btn">get app</div>
+                        {/* <p>{props.content}</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tenetur unde asperiores pariatur! Iste accusamus molestias repellat iusto, numquam officiis incidunt necessitatibus debitis nulla earum cupiditate asperiores.</p>
+                        <div className="get-app-btn">get app</div> */}
                     </div>
                 </div>
         </>
@@ -59,13 +59,13 @@ const BannerSlide = (props) => {
 const BannerSlideData = [
     {
         imgsrc: Img1,
-        heading: "heading",
+        heading: "Get upto 100% cash back on all your utility bills",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tenetur unde asperiores pariatur! Iste accusamus molestias repellat iusto, numquam officiis incidunt necessitatibus debitis nulla earum cupiditate asperiores.",
         class: "banner-1"
     },
     {
         imgsrc: Img2,
-        heading: "heading",
+        heading: "Shop on ecommerce brands throgh us and save upto 100% on each transaction",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tenetur unde asperiores pariatur! Iste accusamus molestias repellat iusto, numquam officiis incidunt necessitatibus debitis nulla earum cupiditate asperiores.",
         class: "banner-2"
     },

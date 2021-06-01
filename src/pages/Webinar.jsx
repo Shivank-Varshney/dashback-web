@@ -14,7 +14,7 @@ const Webinar = () => {
                         <img src={Rocket} alt="" className="img-fluid" />
                     </div>
                     <div className="col-md-6 d-flex justify-content-center flex-column">
-                        <h2>sikho, sikhao or kamao</h2>
+                        <h2>How to save while spending ?</h2>
                         <h3>Webinar in</h3>
                         <Timer />
                     </div>
@@ -24,7 +24,7 @@ const Webinar = () => {
                         <img src={Wave} className="img-fluid" alt="" />
                     </div>
                 </div>
-                <div className="row">
+                <div className="row mt-n2">
                     <div className="col-12 registration-section d-flex flex-column">
                         <h4>To register the webinar <br />please fill the details</h4>
                         {/* <img src={Register} className="img-fluid mx-auto" alt="" /> */}

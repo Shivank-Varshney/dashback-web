@@ -23,6 +23,7 @@ const Navbar = () => {
                                     <Navmenu linkaddress="/web" linkname="about" />
                                     <Navmenu linkaddress="/web" linkname="services" />
                                     <Navmenu linkaddress="/web" linkname="contact us" />
+                                    <Navmenu linkaddress="/downloadapp" linkname="download app" />
                                     <Navmenu linkaddress="/webinar#" linkname="login/register" />
                                 </ul>
                             </div>
