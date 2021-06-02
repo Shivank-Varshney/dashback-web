@@ -58,7 +58,7 @@ const Banner = () => {
                                 <h3>How to Save <br /> while <br /> Spending?</h3>
                                 <h5>Fill your DASH with CASH</h5>
                                 <NavLink to="/webinar#" className="btn-webinar">live <br /> webinar</NavLink>
-                                <p>JUNE 6,2021 <br /> 06:00 PM</p>
+                                <p>JUNE 6,2021 <br /> 11:30 PM</p>
                             </div>
                         </div>
                     </div>
