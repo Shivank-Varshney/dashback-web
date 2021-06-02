@@ -76,12 +76,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       padding: 50px;
       h3{
         font-size: 52px;
         text-align: center;
         text-transform: capitalize;
         font-family: "righteous", sans-serif;
+      }
+      .btn-banner{
+        font-family: "montaga", sans-serif;
+        background-color: #e39d89;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 30px;
+        border-radius: 5px;
+        margin-top: 40px;
+        text-decoration: none;
+        font-weight: bolder;
       }
     }
   }
@@ -93,12 +105,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       padding: 50px;
       h3{
         font-size: 52px;
         text-align: center;
         text-transform: capitalize;
         font-family: "righteous", sans-serif;
+      }
+      .btn-banner{
+        font-family: "montaga", sans-serif;
+        background-color: #a4f3bb;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 30px;
+        border-radius: 5px;
+        margin-top: 40px;
+        text-decoration: none;
+        font-weight: bolder;
       }
     }
   }
@@ -146,6 +170,7 @@
         border-radius: 10px;
         line-height: 25px;
         text-decoration: none;
+        font-family: "montaga", sans-serif;
       }
       p{
         color: #ff725e;
@@ -252,14 +277,14 @@
 }
 
 
-#webinar-section{
+#webinar{
   margin-top: 70px;
   background-color: #215481;
   h2{
     color: #fff;
-    font-size: 52px;
+    font-size: 42px;
     font-family: "righteous", sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
     text-transform: capitalize;
   }
@@ -268,13 +293,13 @@
     color: #E7BB2F;
     font-size: 42px;
     font-family: "righteous", "sans-serif";
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   #countdown {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     border: 4px outset #fff;
-    padding: 15px 30px 30px;
+    padding: 10px 0 20px;
     .box {
       &::after{
         content: ":";
@@ -288,6 +313,7 @@
         font-size: 40px;
         font-weight: bold;
         text-align: center;
+        margin-bottom: 0;
       }
       .text {
         font-size: 12px;
@@ -305,12 +331,11 @@
     }
   }
   .registration-section{
-    background-color: #eb9481;
     h4{
+      color: #fff;
       text-align: center;
       padding: 0;
-      color: #fff;
-      font-size: 46px;
+      font-size: 42px;
       font-family: "righteous", "sans-serif";
     }
     // .character{
@@ -320,7 +345,6 @@
     form{
       z-index: 50;
       color: red;
-      background-color: #215481;
       padding: 50px 100px;
       border-radius: 75px;
       input{
@@ -328,7 +352,7 @@
         outline: none;
       }
       .btn-register{
-        background-color: #fff;
+        background-color: #E7BB2F;
         color: #215481;
         display: inline-block;
         padding: 2px 50px;
@@ -344,8 +368,8 @@
     min-height: 70vh;
   }
 }
-@media only screen and (max-width: 620px) {
-  #webinar-section{
+@media only screen and (max-width: 720px) {
+  #webinar{
     h2{
       font-size: 36px;
     }
@@ -356,7 +380,7 @@
       padding: 15px 5px 15px;
       .box {
         &::after{
-          margin-top: -60px;
+          margin-top: -45px;
           margin-right: -20px;
           font-size: 18px;
         }
@@ -378,7 +402,6 @@
       }
       form{
         color: red;
-        background-color: #215481;
         padding: 50px 30px;
         border-radius: 75px;
         input{
@@ -386,7 +409,6 @@
           outline: none;
         }
         .btn-register{
-          background-color: #fff;
           color: #215481;
           display: inline-block;
           padding: 2px 50px;
@@ -484,7 +506,7 @@
 @media only screen and (max-width: 620px) {
   #reward{
     h2{
-      font-size: 24px;
+      font-size: 48px;
     }
     p{
       font-size: 16px;
@@ -496,6 +518,29 @@
         background-color: #17449c;
       }
     }
+  }
+}
+
+#contact-us{
+  h1{
+    font-family: "montaga", sans-serif;
+    color: #215481;
+    font-weight: bolder;
+  }
+  label{
+    color: #215481;
+    font-weight: bolder;
+    font-family: "roboto", "sans-serif";
+    span{
+      color: red;
+    }
+  }
+  .btn-get-started{
+    background-color: #215481;
+    color: #fff;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
   }
 }
 
