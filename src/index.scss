@@ -69,56 +69,91 @@
 #home-header{
   margin-top: 70px;
   .banner-1{
-    background-color: #e39d89;
-    display: flex;
-    justify-content: center;
+    .banner-1-bg{
+      background-color: #e39d89;
+    }
+    .banner-1-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      h3{
+        font-size: 52px;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "righteous", sans-serif;
+      }
+    }
   }
   .banner-2{
-    background-color: #A4F3BA;
-    display: flex;
-    justify-content: center;
-  }
-  .banner-text{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70vh;
-    padding: 50px;
-    h1{
-      font-size: 62px;
-      font-family: "montaga", sans-serif;
-      text-transform: capitalize;
+    .banner-2-bg{
+      background-color: #a4f3bb;
     }
-    p{
-      font-weight: normal;
-      font-size: 20px;
-      text-align: center;
-      font-family: "roboto", "sans-serif";
-    }
-    .get-app-btn{
-      background-color: #2D3B7D;
-      color: #fff;
-      font-family: "montaga", sans-serif;
-      font-size: 26px;
-      text-transform: capitalize;
-      padding: 5px 30px;
-      border-radius: 20px;
+    .banner-2-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      h3{
+        font-size: 52px;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "righteous", sans-serif;
+      }
     }
   }
-}
-@media only screen and (max-width: 620px) {
-  #home-header{
-    .banner-text{
-      min-height: 90vh;
-      h1{
-        font-size: 46px;
+  .banner-3{
+    .banner-3-bg{
+      background-color: #215481;
+    }
+    .banner-3-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h4{
+        background-color: #215481;
+        color: #ff725e;
+        text-transform: uppercase;
+        padding: 2px 40px;
+        font-family: "roboto", "sans-serif";
+        margin: 20px 0;
+        font-weight: bolder;
+        text-align: center;
+      }
+      h3{
+        font-size: 52px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #215481;
+        font-family: "righteous", sans-serif;
+      }
+      h5{
+        font-family: "roboto", "sans-serif";
+        text-align: center;
+        font-size: 26px;
+        font-weight: bolder;
+        margin: 20px 0;
+      }
+      .btn-webinar{
+        background-color: #ff725e;
+        text-transform: uppercase;
+        color: #215481;
+        font-weight: bolder;
+        text-align: center;
+        font-size: x-large;
+        padding: 10px 30px;
+        border-radius: 10px;
+        line-height: 25px;
+        text-decoration: none;
       }
       p{
-        font-size: 16px;
-      }
-      .get-app-btn{
-        font-size: 22px;
+        color: #ff725e;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 24px;
+        line-height: 25px;
+        margin-top: 20px;
       }
     }
   }
