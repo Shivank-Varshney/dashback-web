@@ -2,6 +2,8 @@ import React from "react";
 import {Switch, Route, Redirect} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
 import Webinar from "./pages/Webinar";
 import DownloadApp from "./pages/DownloadApp";
 import Contact from "./pages/Contact";
@@ -15,6 +17,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/services" component={Services} />
         <Route exact path="/webinar" component={Webinar} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/downloadapp" component={DownloadApp} />

@@ -1,7 +1,7 @@
 import React from "react";
-import Timer from "../components/Timer";
-import Hourglass from "../assets/Hourglass.svg";
 import Phone from "../assets/phone.svg";
+import GooglePlay from "../assets/google-play.svg";
+import App from "../assets/Dashback.apk";
 import Wave from "../assets/download-app-wave.svg";
 
 const DownloadApp = () => {
@@ -10,13 +10,15 @@ const DownloadApp = () => {
             <section id="download-app">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-5 download-app-text-corner">
-                            <h3>Get the FREE App</h3>
-                            <img src={Hourglass} className="img-fluid Hourglass" alt="Hourglass" />
-                            <Timer />
+                        <div className="offset-md-1 col-md-5 download-app-text-corner">
+                            <h3>Download the APP now</h3>
+                            <div className="circle">
+                                <a className="dwnld-btn" href={App} download="Dashback">Download App</a>
+                                <img src={GooglePlay} className="img-fluid" alt="play store" />
+                            </div>
                         </div>
-                        <div className="col-md-7 d-md-block d-none">
-                            <img src={Phone} className="img-fluid  d-flex justify-content-center vh-100" alt="phone" />
+                        <div className="col-md-6 d-md-block d-none">
+                            <img src={Phone} className="img-fluid vh-100" alt="phone" />
                         </div>
                     </div>
                 </div>

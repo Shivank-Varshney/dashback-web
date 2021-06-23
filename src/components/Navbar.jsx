@@ -24,8 +24,8 @@ const Navbar = () => {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
                                     <Navmenu linkaddress="/#" linkname="home" />
-                                    <Navmenu linkaddress="/#home-why" linkname="about" />
-                                    <Navmenu linkaddress="/#home-why" linkname="services" />
+                                    <Navmenu linkaddress="/about#" linkname="about" />
+                                    <Navmenu linkaddress="/services#" linkname="services" />
                                     <Navmenu linkaddress="/contact#" linkname="contact us" />
                                     <Navmenu linkaddress="/downloadapp#" linkname="download app" />
                                     <Navmenu linkaddress="/webinar#" linkname="login/register" />
