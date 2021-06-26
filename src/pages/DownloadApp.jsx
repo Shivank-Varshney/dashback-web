@@ -13,7 +13,7 @@ const DownloadApp = () => {
                         <div className="offset-md-1 col-md-5 download-app-text-corner">
                             <h3>Download the APP now</h3>
                             <div className="circle">
-                                <a className="dwnld-btn" href={App} download="Dashback">Download App</a>
+                                <a className="dwnld-btn" href={App} file download="download.apk" >Download App</a>
                                 <img src={GooglePlay} className="img-fluid" alt="play store" />
                             </div>
                         </div>
@@ -27,5 +27,7 @@ const DownloadApp = () => {
         </>
     );
 }
+
+// backend.dashback.in/download/dashback.apk
 
 export default DownloadApp
