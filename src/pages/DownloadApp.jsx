@@ -1,7 +1,6 @@
 import React from "react";
 import Phone from "../assets/phone.svg";
 import GooglePlay from "../assets/google-play.svg";
-import App from "../assets/Dashback.apk";
 import Wave from "../assets/download-app-wave.svg";
 
 const DownloadApp = () => {
@@ -13,7 +12,7 @@ const DownloadApp = () => {
                         <div className="offset-md-1 col-md-5 download-app-text-corner">
                             <h3>Download the APP now</h3>
                             <div className="circle">
-                                <a className="dwnld-btn" href={App} file download="download.apk" >Download App</a>
+                                <a className="dwnld-btn" href="https://backend.dashback.in/download/Dashback.apk" file download="download.apk" >Download App</a>
                                 <img src={GooglePlay} className="img-fluid" alt="play store" />
                             </div>
                         </div>
